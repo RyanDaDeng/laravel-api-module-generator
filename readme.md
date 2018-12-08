@@ -19,7 +19,7 @@ $ composer require-dev timehunter/laravel-api-module-generator
 Publish config
 
 ``` bash
-php artisan vendor:publish --provider="TimeHunter\laravel-api-module-generator\laravel-api-module-generatorServiceProvider"
+php artisan vendor:publish --provider="TimeHunter\LaravelApiModuleGenerator\LaravelApiModuleGeneratorServiceProvider"
 ```
 
 ## Usage
