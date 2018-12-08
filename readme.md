@@ -15,7 +15,7 @@ IMPORTANT: This package is not aimed at setting up a module, this is only for yo
 
 ## Installation
 
-Via Composer, put it into composer require-dev list, its no needed for production
+Via Composer, put it into composer require-dev list, its not needed for production
 
 ``` bash
 $ composer require timehunter/laravel-api-module-generator --dev
