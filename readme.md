@@ -37,6 +37,14 @@ You can also directly run the command first to see the sample result within the 
 
 ## About Code Structure
 
+I try to make the structure as flexible as possible, there are many extensions can be added. 
+
+You can check laravel-file-generator project to create your own structure if you want. 
+
+#### routes.php
+
+It's not connected with Laravel, it's just a sample file, you can copy/paste over to your root routes file. Delete it if not needed.
+
 #### Repository-Service Pattern vs Laravel Eloquent
 There is a debate regarding the repository-service pattern in laravel...well, after reading bunch of blogs, articles and my years' experience, I can surely tell you Laravel is not designed for using PURE repository-service pattern like Java/Spring.
 
