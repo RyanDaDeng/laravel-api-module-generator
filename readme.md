@@ -10,10 +10,10 @@ It's just simple and NO other third party helper code
 
 ## Installation
 
-Via Composer
+Via Composer, put it into composer require-dev list, its no needed for production
 
 ``` bash
-$ composer require-dev timehunter/laravel-api-module-generator
+$ composer require timehunter/laravel-api-module-generator --dev
 ```
 
 Publish config
