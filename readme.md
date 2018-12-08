@@ -38,7 +38,7 @@ done...
 
 You can also directly run the command first to see the sample result within the app folder
 
-## About Code Structure
+## About Folder Structure
 
 I try to make the structure as small as possible, there can be many extensions possibly added in. However, people usually has their own habit to create their own structure.
 
