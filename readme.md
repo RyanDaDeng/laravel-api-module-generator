@@ -40,15 +40,15 @@ You can also directly run the command first to see the sample result within the 
 
 ## About Code Structure
 
-I try to make the structure as flexible as possible, there are many extensions can be added. 
+I try to make the structure as small as possible, there can be many extension possibly added in. However, people usually has their own habit to create their own structure.
 
-You can check [laravel-file-generator](https://github.com/RyanDaDeng/laravel-file-generator)  project to create your own structure if you want. 
+You can also check [laravel-file-generator](https://github.com/RyanDaDeng/laravel-file-generator)  project to create your own structure if you want. 
 
-#### routes.php
+### routes.php
 
 It's not connected with Laravel, it's just a sample file, you can copy/paste over to your root routes file. Delete it if not needed.
 
-#### Repository-Service Pattern vs Laravel Eloquent
+### Repository-Service Pattern vs Laravel Eloquent
 There is a debate regarding the repository-service pattern in laravel...well, after reading bunch of blogs, articles and my years' experience, I can surely tell you Laravel is not designed for using PURE repository-service pattern like Java/Spring.
 
 One big concern is that, Eloquent model uses Active Record which is completely different from Data Mapper. If you are stil deciding to make PURE repository-service pattern in Laravel, you will end up with a nightmare, massive, duplicate and ugly code as you are re-writing Eloquent model again.
@@ -59,7 +59,7 @@ You can check and read blogs from online, I suggest you to see some code that pe
 
 One more helpful point for you, sometimes you might do CACHE on your queries, you can check Decorator design pattern to help you set up.
 
-#### Models
+### Models
 
 As the structure is module-based, I prefer you bind $table and $connection for every models in each module folder.
 
