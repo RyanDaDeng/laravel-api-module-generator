@@ -1,57 +1,52 @@
-# LaravelApiModuleGenerator
+# Laravel Api Module Generator
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
-[![Build Status][ico-travis]][link-travis]
-[![StyleCI][ico-styleci]][link-styleci]
 
-This is where your description should go. Take a look at [contributing.md](contributing.md) to see a to do list.
+
+A simple laravel api module service generator to provide you with a clean and lightweight code structure.
+
+It's just simple and NO other third party helper code
 
 ## Installation
 
 Via Composer
 
 ``` bash
-$ composer require timehunter/laravelapimodulegenerator
+$ composer require-dev timehunter/laravel-api-module-generator
+```
+
+Publish config
+
+``` bash
+php artisan vendor:publish --provider="TimeHunter\laravel-api-module-generator\laravel-api-module-generatorServiceProvider"
 ```
 
 ## Usage
 
-## Change log
+Step 1 - make your own config
 
-Please see the [changelog](changelog.md) for more information on what has changed recently.
-
-## Testing
-
+Step 2 - run command:
 ``` bash
-$ composer test
+php artisan laravel-api-module:make
 ```
 
-## Contributing
+done...
 
-Please see [contributing.md](contributing.md) for details and a todolist.
+You can also directly run the command first to see the sample result within the app folder
 
 ## Security
 
 If you discover any security related issues, please email ryandadeng@gmail.com instead of using the issue tracker.
 
-## Credits
-
-- [Ryan Deng][link-author]
-- [All Contributors][link-contributors]
 
 ## License
 
 license. Please see the [license file](license.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/timehunter/laravelapimodulegenerator.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/timehunter/laravelapimodulegenerator.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/timehunter/laravelapimodulegenerator/master.svg?style=flat-square
-[ico-styleci]: https://styleci.io/repos/12345678/shield
+[ico-version]: https://img.shields.io/packagist/v/timehunter/laravel-api-module-generator.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/timehunter/laravel-api-module-generator.svg?style=flat-square
+[link-packagist]: https://packagist.org/packages/timehunter/laravel-api-module-generator
+[link-downloads]: https://packagist.org/packages/timehunter/laravel-api-module-generator
 
-[link-packagist]: https://packagist.org/packages/timehunter/laravelapimodulegenerator
-[link-downloads]: https://packagist.org/packages/timehunter/laravelapimodulegenerator
-[link-travis]: https://travis-ci.org/timehunter/laravelapimodulegenerator
-[link-styleci]: https://styleci.io/repos/12345678
-[link-author]: https://github.com/timehunter
-[link-contributors]: ../../contributors]
+
