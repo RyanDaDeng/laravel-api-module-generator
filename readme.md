@@ -40,7 +40,7 @@ You can also directly run the command first to see the sample result within the 
 
 ## About Code Structure
 
-I try to make the structure as small as possible, there can be many extension possibly added in. However, people usually has their own habit to create their own structure.
+I try to make the structure as small as possible, there can be many extensions possibly added in. However, people usually has their own habit to create their own structure.
 
 You can also check [laravel-file-generator](https://github.com/RyanDaDeng/laravel-file-generator)  project to create your own structure if you want. 
 
