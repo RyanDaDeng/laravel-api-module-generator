@@ -6,7 +6,7 @@
 
 A simple laravel api module service generator to provide you with a clean and lightweight code structure.
 
-It's just simple and NO other third party helper code
+It's just simple and NO other third party helper code.
 
 ## Demo
 ![](https://github.com/RyanDaDeng/design-patterns/blob/master/apimodule.gif)
