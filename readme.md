@@ -8,6 +8,9 @@ A simple laravel api module service generator to provide you with a clean and li
 
 It's just simple and NO other third party helper code
 
+## Demo
+![](https://github.com/RyanDaDeng/design-patterns/blob/master/apimodule.gif)
+
 ## Installation
 
 Via Composer, put it into composer require-dev list, its no needed for production
@@ -39,7 +42,7 @@ You can also directly run the command first to see the sample result within the 
 
 I try to make the structure as flexible as possible, there are many extensions can be added. 
 
-You can check laravel-file-generator project to create your own structure if you want. 
+You can check [laravel-file-generator](https://github.com/RyanDaDeng/laravel-file-generator)  project to create your own structure if you want. 
 
 #### routes.php
 
