@@ -67,7 +67,7 @@ The Facade service is one of powerful Laravel features. (note: Laravel's Facade 
 
 The sturcture takes repositories(query collection) as paramters, so all you have to do is that put all your business logic in the Service class. Also, all your queires go to Repository. You might notice that there is an interface attached to Service, this is only easier for you to quickly generate service functions, you can remove it if you want. 
 
-One endpoint by default would be mapping to one service function right now.
+One endpoint by default would be mapped with one service function right now.
 
 
 ### Models
