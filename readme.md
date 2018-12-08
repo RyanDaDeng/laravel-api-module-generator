@@ -35,6 +35,24 @@ done...
 
 You can also directly run the command first to see the sample result within the app folder
 
+## About Code Structure
+
+#### Repository-Service Pattern vs Laravel Eloquent
+There is a debate regarding the repository-service pattern in laravel...well, after reading bunch of blogs, articles and my years' experience, I can surely tell you Laravel is not designed for using PURE repository-service pattern like Java/Spring.
+
+One big concern is that, Eloquent model uses Active Record which is completely different from Data Mapper. If you are stil deciding to make PURE repository-service pattern in Laravel, you will end up with a nightmare, massive, duplicate and ugly code as you are re-writing Eloquent model again.
+
+However, this package still generates a Repository folders, which is simply just a query collection, nothing else. I do still prefer you put all your Eloquent-like queries into one single class, it's not about techinical SOLD principle levels, its only about code reusability and arrangement.
+
+You can check and read blogs from online, I suggest you to see some code that people try to apply repository-service pattern in Laravel...yeah, very complicated and...my question was like why you use Laravel?
+
+One more helpful point for you, sometimes you might do CACHE on your queries, you can check Decorator design pattern to help you set up.
+
+#### Models
+
+As the structure is module-based, I prefer you bind $table and $connection for every models in each module folder.
+
+
 ## Security
 
 If you discover any security related issues, please email ryandadeng@gmail.com instead of using the issue tracker.
