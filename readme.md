@@ -24,7 +24,7 @@ php artisan vendor:publish --provider="TimeHunter\LaravelApiModuleGenerator\Lara
 
 ## Usage
 
-Step 1 - make your own config
+Step 1 - make up your own config - laravelapimodulegenerator.php in config folder
 
 Step 2 - run command:
 ``` bash
