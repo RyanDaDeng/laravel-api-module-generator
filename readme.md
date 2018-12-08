@@ -53,7 +53,7 @@ There is a debate regarding the repository-service pattern in laravel...well, af
 
 One big concern is that, Eloquent model uses Active Record which is completely different from Data Mapper. If you are stil deciding to make PURE repository-service pattern in Laravel, you will end up with a nightmare, massive, duplicate and ugly code as you are re-writing Eloquent model again.
 
-However, this package still generates a Repository folders, which is simply just a query collection, nothing else. I do still prefer you put all your Eloquent-like queries into one single class, it's not about techinical SOLD principle levels, its only about code reusability and arrangement.
+However, this package still generates a Repository folder that is simply just a query collection, nothing else. I do still prefer you put all your Eloquent-like queries into one single class, it's not about techinical SOLD principle levels, its only about code reusability and arrangement.
 
 You can check and read blogs from online, I suggest you to see some code that people try to apply repository-service pattern in Laravel...yeah, very complicated and...my question was like why you use Laravel?
 
