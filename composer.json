@@ -1,18 +1,25 @@
 {
-  "name": "timehunter/laravelapimodulegenerator",
-  "description": ":description",
+  "name": "timehunter/laravel-api-module-generator",
+  "description": "A simple laravel api module service generator to provide you with a clean and lightweight code structure.",
   "license": "license",
   "authors": [
     {
       "name": "Ryan Deng",
       "email": "ryandadeng@gmail.com",
-      "homepage": "author homepage"
+      "homepage": "https://github.com/RyanDaDeng"
     }
   ],
   "homepage": "https://github.com/timehunter/laravelapimodulegenerator",
   "keywords": [
     "Laravel",
-    "LaravelApiModuleGenerator"
+    "LaravelApiModuleGenerator",
+    "laravel api generator",
+    "laravel module generator",
+    "laravel service generator",
+    "laravel curd generator",
+    "laravel generator",
+    "laravel maker",
+    "laravel code generator",
   ],
   "require": {
     "timehunter/laravel-file-generator": "^1.6.0"
