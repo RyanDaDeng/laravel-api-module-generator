@@ -19,7 +19,7 @@
     "laravel curd generator",
     "laravel generator",
     "laravel maker",
-    "laravel code generator",
+    "laravel code generator"
   ],
   "require": {
     "timehunter/laravel-file-generator": "^1.6.0"
