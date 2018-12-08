@@ -1,6 +1,7 @@
 <?php
 
 namespace TimeHunter\LaravelApiModuleGenerator;
+
 use TimeHunter\LaravelApiModuleGenerator\Templates\FacadeClassTemplate;
 use TimeHunter\LaravelApiModuleGenerator\Templates\InterfaceServiceTemplate;
 use TimeHunter\LaravelApiModuleGenerator\Templates\ModelClassTemplate;
@@ -32,6 +33,7 @@ class LaravelApiModuleGenerator
             foreach ($schema['modules'][$moduleName]['models'] as $model) {
                 LaravelFileGenerator::publish(new ModelClassTemplate($moduleName, $model, $value['namespace'], $value['folder_path']));
             }
+            echo "\e[0;32;25mModule: " . $moduleName . ' Generated!' . ' It is located at ' . $value['folder_path'] ."\e[0m\n";
         }
     }
 }

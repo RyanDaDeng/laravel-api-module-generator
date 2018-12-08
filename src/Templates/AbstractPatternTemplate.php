@@ -63,21 +63,8 @@ class AbstractPatternTemplate
         foreach ($this->uri as $uri) {
 
             $str = "@method static Collection " . $uri['function'] . '(';
-            $strA = '';
-            if (strpos($uri['uri'], '{') !== false) {
-                $explodes = explode('/', $uri['uri']);
+            $strA = $this->getParamFromUrl($uri['uri']);
 
-                foreach ($explodes as $explode) {
-                    if ($strA) {
-                        $strA .= ',';
-                    }
-                    if (strpos($explode, '{') !== false) {
-                        $explode = str_replace('{', '', $explode);
-                        $explode = str_replace('}', '', $explode);
-                        $strA .= '$' . $explode;
-                    }
-                }
-            }
 
             if (strcasecmp($uri['method'], 'get') === 0) {
                 $total = count($uri['rules']);
@@ -113,21 +100,7 @@ class AbstractPatternTemplate
         foreach ($this->uri as $uri) {
 
             $str = "public function " . $uri['function'] . '(';
-            $strA = '';
-            if (strpos($uri['uri'], '{') !== false) {
-                $explodes = explode('/', $uri['uri']);
-
-                foreach ($explodes as $explode) {
-                    if ($strA) {
-                        $strA .= ',';
-                    }
-                    if (strpos($explode, '{') !== false) {
-                        $explode = str_replace('{', '', $explode);
-                        $explode = str_replace('}', '', $explode);
-                        $strA .= '$' . $explode;
-                    }
-                }
-            }
+            $strA = $this->getParamFromUrl($uri['uri']);
 
             if (strcasecmp($uri['method'], 'get') === 0) {
                 $total = count($uri['rules']);
@@ -162,11 +135,11 @@ class AbstractPatternTemplate
         if (strpos($uri, '{') !== false) {
             $explodes = explode('/', $uri);
             foreach ($explodes as $explode) {
-                if ($str) {
-                    $str .= ',';
-                }
 
                 if (strpos($explode, '{') !== false) {
+                    if ($str) {
+                        $str .= ',';
+                    }
                     $explode = str_replace('{', '', $explode);
                     $explode = str_replace('}', '', $explode);
 
