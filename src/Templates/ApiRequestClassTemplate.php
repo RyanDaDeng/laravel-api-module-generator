@@ -12,7 +12,7 @@ namespace TimeHunter\LaravelApiModuleGenerator\Templates;
 use TimeHunter\LaravelFileGenerator\Interfaces\ClassSimpleTemplateInterface;
 
 
-class RequestClassTemplate extends AbstractPatternTemplate implements ClassSimpleTemplateInterface
+class ApiRequestClassTemplate extends AbstractPatternTemplate implements ClassSimpleTemplateInterface
 {
     public function printArray($data)
     {
@@ -35,10 +35,12 @@ class RequestClassTemplate extends AbstractPatternTemplate implements ClassSimpl
     {
         return [
             'class_type' => 'class',
-            'directory' => $this->folderPath . '/' . $this->moduleName.'/Requests/Web',
-            'namespace' => $this->nameSpace .'\\'. $this->moduleName.'\\Requests\\Web',
+            'directory' => $this->folderPath . '/' . $this->moduleName.'/Requests/Api/V1',
+            'namespace' => $this->nameSpace .'\\'. $this->moduleName.'\\Requests\\Api\\V1',
             'use' => [
-                'Illuminate\Foundation\Http\FormRequest'
+                'Illuminate\Foundation\Http\FormRequest',
+                'Illuminate\Contracts\Validation\Validator',
+                'Illuminate\Http\Exceptions\HttpResponseException'
             ],
             'class_name' =>ucwords($this->moduleName).ucwords($this->uri['function']).'Request' ,
             'extends' => 'FormRequest',
@@ -56,6 +58,10 @@ class RequestClassTemplate extends AbstractPatternTemplate implements ClassSimpl
                 "public function rules()
     {
         return " . $this->printArray($this->uri['rules']) . ";
+    }
+    protected function failedValidation(Validator \$validator)
+    {
+        throw new HttpResponseException(response()->json(\$validator->errors(), 422));
     }"
             ]
         ];

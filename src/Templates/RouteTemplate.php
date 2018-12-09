@@ -5,6 +5,7 @@
  * Date: 2018/12/7
  * Time: 下午9:07
  */
+
 namespace TimeHunter\LaravelApiModuleGenerator\Templates;
 
 
@@ -36,12 +37,13 @@ class RouteTemplate extends AbstractPatternTemplate implements RouteSimpleTempla
         foreach ($this->uri as $uri) {
             $row = [
                 'uri' => $uri['uri'],
-                'method'=>$uri['method'],
+                'method' => $uri['method'],
                 'domain' => $this->moduleName,
                 'key' => $this->moduleName . '.' . $uri['function'],
+                'namespace' => $this->nameSpace,
                 'function' => '@' . $uri['function'],
-                'web_class' => $this->nameSpace .'\\' . $this->moduleName . '\\Controllers\\Web\\' . $this->moduleName . 'WebController',
-                'api_class' => $this->nameSpace .'\\' . $this->moduleName . '\\Controllers\\Api\\V1\\' . $this->moduleName . 'ApiController',
+                'web_class' => $this->nameSpace . '\\' . $this->moduleName . '\\Controllers\\Web\\' . $this->moduleName . 'WebController',
+                'api_class' => $this->nameSpace . '\\' . $this->moduleName . '\\Controllers\\Api\\V1\\' . $this->moduleName . 'ApiController',
             ];
             $data['uri'][] = $row;
         }

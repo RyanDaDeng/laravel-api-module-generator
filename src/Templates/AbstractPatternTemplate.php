@@ -30,9 +30,14 @@ class AbstractPatternTemplate
         return ucwords($this->moduleName) . ucwords($function) . 'Request';
     }
 
+    public function getApiRequestNameSpace()
+    {
+        return $this->nameSpace. '\\' . $this->moduleName . '\\Requests\\Api\\V1' . '\\';
+    }
+
     public function getRequestNameSpace()
     {
-        return $this->nameSpace. '\\' . $this->moduleName . '\\Requests' . '\\';
+        return $this->nameSpace. '\\' . $this->moduleName . '\\Requests\\Web' . '\\';
     }
 
     public function getServiceFacadeNameSpace()

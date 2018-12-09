@@ -12,7 +12,7 @@ namespace TimeHunter\LaravelApiModuleGenerator\Templates;
 use TimeHunter\LaravelFileGenerator\Interfaces\ClassSimpleTemplateInterface;
 
 
-class RequestClassTemplate extends AbstractPatternTemplate implements ClassSimpleTemplateInterface
+class WebRequestClassTemplate extends AbstractPatternTemplate implements ClassSimpleTemplateInterface
 {
     public function printArray($data)
     {
