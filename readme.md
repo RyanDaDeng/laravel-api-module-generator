@@ -15,6 +15,8 @@ IMPORTANT: This package is not aimed at setting up a module, this is only for yo
 
 ## Installation
 
+- Laravel > 5.4
+
 Via Composer, put it into composer require-dev list, its not needed for production
 
 ``` bash
@@ -27,6 +29,15 @@ Publish config
 php artisan vendor:publish --provider="TimeHunter\LaravelApiModuleGenerator\LaravelApiModuleGeneratorServiceProvider"
 ```
 
+For API routes, you might need to comment out the following line which is a hard-coded value to API namespace:
+
+``` bash
+        Route::prefix('api')
+             ->middleware('api')
+//             ->namespace($this->namespace) comment out this line
+             ->group(base_path('routes/api.php'));
+```             
+             
 ## Usage
 
 Step 1 - make up your own config - laravelapimodulegenerator.php in config folder
