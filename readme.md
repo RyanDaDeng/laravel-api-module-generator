@@ -21,7 +21,7 @@ IMPORTANT: This package is not aimed at setting up a module, this is only for yo
         |-- Contracts
         |-- Controllers
             |--  Api
-            |--  V1
+                |--  V1
             |--  Web
         |-- Facades
         |-- Models
@@ -29,7 +29,7 @@ IMPORTANT: This package is not aimed at setting up a module, this is only for yo
         |-- Repositories
         |-- Requests
         	|--  Api
-            |--  V1
+                |--  V1
             |--  Web
         |-- Services
             
