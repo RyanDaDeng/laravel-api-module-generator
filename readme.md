@@ -4,6 +4,8 @@
 [![Total Downloads][ico-downloads]][link-downloads]
 
 
+This is initial version, I will keep adding new features in in the following days.
+
 A simple laravel api module service generator to provide you with a clean and lightweight code structure.
 
 It's just simple and NO other third party helper code.
