@@ -29,6 +29,8 @@ Publish config
 php artisan vendor:publish --provider="TimeHunter\LaravelApiModuleGenerator\LaravelApiModuleGeneratorServiceProvider"
 ```
 
+Optional:
+
 For API routes, you might need to comment out the following line which is a hard-coded value to API namespace:
 
 ``` bash
@@ -50,6 +52,11 @@ php artisan laravel-api-module:make
 done...
 
 You can also directly run the command first to see the sample result within the app folder
+
+If you want to use Service and Facade, add them in your config/app.php folder.
+
+Also remember to copy/paste routes.php to your root routes folder.
+
 
 ## About Folder Structure
 
