@@ -17,6 +17,24 @@ IMPORTANT: This package is not aimed at setting up a module, this is only for yo
 
 ![](https://github.com/RyanDaDeng/design-patterns/blob/master/apimodule.gif)
 
+
+-- Module
+            |-- Contracts
+            |-- Controllers
+           		|--  Api
+           			|--  V1
+           		|--  Web
+            |-- Facades
+            |-- Models
+            |-- Providers
+            |-- Repositories
+            |-- Requests
+            	|--  Api
+           			|--  V1
+           		|--  Web
+           	|-- Services
+                
+                
 ## Installation
 
 - Laravel > 5.4
