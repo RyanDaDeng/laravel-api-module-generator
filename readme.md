@@ -11,6 +11,8 @@ It's just simple and NO other third party helper code.
 IMPORTANT: This package is not aimed at setting up a module, this is only for you to quickly create a structure and make it as your own starting point.
 
 ## Demo
+(The Demo might be slightly different to your actual result)
+
 ![](https://github.com/RyanDaDeng/design-patterns/blob/master/apimodule.gif)
 
 ## Installation
