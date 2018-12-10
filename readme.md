@@ -52,8 +52,9 @@ php artisan vendor:publish --provider="TimeHunter\LaravelApiModuleGenerator\Lara
 
 Optional:
 
-For API routes, you might need to comment out the following line which is a hard-coded value to API namespace:
+For API routes, you might need to comment out the following line which is a hard-coded value to system's default API namespace.
 
+In RouteServiceProvider.php:
 ``` bash
         Route::prefix('api')
              ->middleware('api')
