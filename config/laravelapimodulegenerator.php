@@ -5,7 +5,7 @@ return [
         'PetStore' => [
             'enable' => true, // enable = true will generate the folder
             'folder_path' => app_path(), // root path to save the file, default is under your current local path: ../../app/
-            'namespace' => 'App',  // class prefix namespace
+            'namespace' => 'App',  // class prefix namespace, use \
             'uri' => [
                 [
                     'uri' => '/pets',
