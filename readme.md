@@ -6,13 +6,11 @@
 
 ## IMPORTANT UPDATE
 
-I am working on a new open source project which will re-organise and re-write [Laravel Module](https://github.com/nWidart/laravel-modules) with my own open-source projects, the version will contain more features covered, e.g. support Admin custom setting JSONs, vuejs simple admin, api generators etc.
+I am working on another new open source project which will re-organise and re-write [Laravel Module](https://github.com/nWidart/laravel-modules) with my own open-source projects, the version will contain more features covered, e.g. support Admin custom setting JSONs, vuejs simple admin, api generators etc.
 
 Please be mind, if you have any issues related to this package, please submit tickets I will only update if there is bugs.
 
 ## DESCRIPTION
-
-This is an initial version, I will keep adding new features in in the following days.
 
 A simple laravel api module service generator to provide you with a clean and lightweight code structure.
 
