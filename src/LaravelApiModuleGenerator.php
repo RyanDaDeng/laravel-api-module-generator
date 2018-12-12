@@ -48,8 +48,10 @@ class LaravelApiModuleGenerator
                 foreach ($schema['modules'][$moduleName]['models'] as $model) {
                     LaravelFileGenerator::publish(new ModelClassTemplate($moduleName, $model, $value['namespace'], $value['folder_path']));
                 }
+                echo "\e[0;32;25mModule: " . $moduleName . ' Generated!' . ' It is located at ' . $value['folder_path'] . "\e[0m\n";
+            }else{
+                echo "\e[0;34;25mModule: " . $moduleName . '  skipped!' . "\e[0m\n";
             }
-            echo "\e[0;32;25mModule: " . $moduleName . ' Generated!' . ' It is located at ' . $value['folder_path'] . "\e[0m\n";
         }
     }
 }
