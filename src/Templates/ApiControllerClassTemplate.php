@@ -21,7 +21,9 @@ class ApiControllerClassTemplate extends AbstractPatternTemplate implements Clas
 
         $requests = [];
         foreach ($this->uri as $uri) {
-            $requests[] = $this->getApiRequestNameSpace() . $this->getRequestName($uri['function']);
+            if ($uri['type'] === 'api') {
+                $requests[] = $this->getApiRequestNameSpace() . $this->getRequestName($uri['function']);
+            }
         }
         return [
             'class_type' => 'class',

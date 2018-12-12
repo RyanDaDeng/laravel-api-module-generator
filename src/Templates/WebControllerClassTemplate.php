@@ -21,12 +21,14 @@ class WebControllerClassTemplate extends AbstractPatternTemplate implements Clas
 
         $requests = [];
         foreach ($this->uri as $uri) {
-            $requests[] = $this->getRequestNameSpace() . $this->getRequestName($uri['function']);
+            if ($uri['type'] === 'web') {
+                $requests[] = $this->getRequestNameSpace() . $this->getRequestName($uri['function']);
+            }
         }
         return [
             'class_type' => 'class',
             'directory' => $this->folderPath . '/' . $this->moduleName . '/Controllers/Web',
-            'namespace' => $this->nameSpace .'\\' . $this->moduleName . '\\Controllers\\Web',
+            'namespace' => $this->nameSpace . '\\' . $this->moduleName . '\\Controllers\\Web',
             'use' => array_merge([
                 'App\Http\Controllers\Controller',
                 $this->getServiceFacadeNameSpace() . '\\' . $this->getServiceFacadeName(),
@@ -39,7 +41,7 @@ class WebControllerClassTemplate extends AbstractPatternTemplate implements Clas
             ],
             'properties' => [
             ],
-            'functions' =>   $this->getControllerFunction()
+            'functions' => $this->getControllerFunction()
         ];
     }
 

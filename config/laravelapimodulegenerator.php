@@ -2,7 +2,8 @@
 
 return [
     'modules' => [
-        'PetStore2' => [
+        'PetStore' => [
+            'enable' => true, // enable = true will generate the folder
             'folder_path' => app_path(), // root path to save the file, default is under your current local path: ../../app/
             'namespace' => 'App',  // class prefix namespace
             'uri' => [
@@ -13,7 +14,8 @@ return [
                         'id' => 'integer'
                     ],
                     'method' => 'get',
-                    'function' => 'getPets'
+                    'function' => 'getPets',
+                    'type' => 'web'// web, api
                 ],
                 [
                     'uri' => '/pets',
@@ -22,7 +24,8 @@ return [
                         'id' => 'integer'
                     ],
                     'method' => 'post',
-                    'function' => 'createPet'
+                    'function' => 'createPet',
+                    'type' => 'web'// web, api
                 ],
                 [
                     'uri' => '/pets/{id}/{ss}',
@@ -31,7 +34,8 @@ return [
                         'id' => 'integer'
                     ],
                     'method' => 'put',
-                    'function' => 'updatePet'
+                    'function' => 'updatePet',
+                    'type' => 'api'// web, api
                 ],
                 [
                     'uri' => '/pets/{i}',
@@ -40,7 +44,8 @@ return [
                         'id' => 'integer'
                     ],
                     'method' => 'patch',
-                    'function' => 'updatePetWithSomething'
+                    'function' => 'updatePetWithSomething',
+                    'type' => 'api'// web, api
                 ],
             ],
             'models' => [

@@ -57,18 +57,7 @@ Publish config
 ``` bash
 php artisan vendor:publish --provider="TimeHunter\LaravelApiModuleGenerator\LaravelApiModuleGeneratorServiceProvider"
 ```
-
-Optional:
-
-For API routes, you might need to comment out the following line which is a hard-coded value to system's default API namespace.
-
-In RouteServiceProvider.php:
-``` bash
-        Route::prefix('api')
-             ->middleware('api')
-//             ->namespace($this->namespace) comment out this line
-             ->group(base_path('routes/api.php'));
-```             
+    
              
 ## Usage
 
@@ -79,13 +68,15 @@ Step 2 - run command:
 php artisan laravel-api-module:make
 ```
 
-done...
+Step 3 - add your service provider and facade from generated folder
 
-You can also directly run the command first to see the sample result within the app folder
 
-If you want to use Service and Facade, add them in your config/app.php folder.
+Step 4 - run command to see registered routes
+``` bash
+php artisan route:list
+```
 
-Also remember to copy/paste routes.php to your root routes folder.
+Step 5: Play with your module
 
 
 ## About Folder Structure

@@ -22,7 +22,7 @@
     "laravel code generator"
   ],
   "require": {
-    "timehunter/laravel-file-generator": "^1.6.0"
+    "timehunter/laravel-file-generator": "^1.7.0"
   },
   "require-dev": {
     "phpunit/phpunit": "~7.0",

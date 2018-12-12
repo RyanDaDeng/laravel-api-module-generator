@@ -30,6 +30,7 @@ class ModelClassTemplate extends AbstractPatternTemplate implements ClassSimpleT
             'traits' => [
             ],
             'properties' => [
+                'protected $table'
             ],
             'functions' => [
             ]
