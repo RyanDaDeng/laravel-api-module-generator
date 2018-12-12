@@ -30,7 +30,7 @@ class ApiRouteTemplate extends AbstractPatternTemplate implements RouteSimpleTem
     {
         $data = [
             'directory' => $this->folderPath . '/' . $this->moduleName . '/routes',
-            'prefix' => $this->hyphenate($this->moduleName),
+            'prefix' => $this->hyphenate($this->moduleName).'/api/v1',
             'middleware' => ['api', 'auth:api'],
             'namespace' => $this->nameSpace . '\\' . $this->moduleName . '\\Controllers\\Api\\V1',
             'route_name' => 'api',

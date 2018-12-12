@@ -30,7 +30,7 @@ class WebRouteTemplate extends AbstractPatternTemplate implements RouteSimpleTem
     {
         $data = [
             'directory' => $this->folderPath . '/' . $this->moduleName . '/routes',
-            'prefix' => $this->hyphenate($this->moduleName),
+            'prefix' => $this->hyphenate($this->moduleName).'/web',
             'middleware' => ['web', 'auth'],
             'namespace' => $this->nameSpace . '\\' . $this->moduleName . '\\Controllers\\Web',
             'route_name' => 'web',
