@@ -32,17 +32,17 @@ class AbstractPatternTemplate
 
     public function getApiRequestNameSpace()
     {
-        return $this->nameSpace. '\\' . $this->moduleName . '\\Requests\\Api\\V1' . '\\';
+        return $this->nameSpace . '\\' . $this->moduleName . '\\Requests\\Api\\V1' . '\\';
     }
 
     public function getRequestNameSpace()
     {
-        return $this->nameSpace. '\\' . $this->moduleName . '\\Requests\\Web' . '\\';
+        return $this->nameSpace . '\\' . $this->moduleName . '\\Requests\\Web' . '\\';
     }
 
     public function getServiceFacadeNameSpace()
     {
-        return $this->nameSpace. '\\'  . $this->moduleName . '\\Facades';
+        return $this->nameSpace . '\\' . $this->moduleName . '\\Facades';
     }
 
     public function getServiceFacadeName()
@@ -52,7 +52,7 @@ class AbstractPatternTemplate
 
     public function getServiceNameSpace()
     {
-        return $this->nameSpace. '\\'  . $this->moduleName . '\\Services';
+        return $this->nameSpace . '\\' . $this->moduleName . '\\Services';
     }
 
     public function getServiceName()
@@ -160,11 +160,14 @@ class AbstractPatternTemplate
 
     }
 
-    public function getControllerFunction()
+    public function getControllerFunction($type)
     {
 
         $data = [];
         foreach ($this->uri as $uri) {
+            if ($uri['type'] !== $type) {
+                continue;
+            }
             $str = "public function " . $uri['function'] . '(' . $this->getRequestName($uri['function']) . ' $request ';
 
 

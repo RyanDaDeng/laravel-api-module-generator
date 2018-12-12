@@ -41,7 +41,7 @@ class WebControllerClassTemplate extends AbstractPatternTemplate implements Clas
             ],
             'properties' => [
             ],
-            'functions' => $this->getControllerFunction()
+            'functions' => $this->getControllerFunction('web')
         ];
     }
 

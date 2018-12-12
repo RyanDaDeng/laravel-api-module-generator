@@ -41,7 +41,7 @@ class ApiControllerClassTemplate extends AbstractPatternTemplate implements Clas
             ],
             'properties' => [
             ],
-            'functions' =>   $this->getControllerFunction()
+            'functions' =>   $this->getControllerFunction('api')
         ];
     }
 
