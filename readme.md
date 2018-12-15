@@ -83,10 +83,6 @@ I try to make the structure as small as possible, there can be many extensions p
 
 You can also check [laravel-file-generator](https://github.com/RyanDaDeng/laravel-file-generator)  project to create your own structure if you want. 
 
-### routes.php
-
-It's not connected with Laravel, it's just a sample file, you can copy/paste over to your root routes file. Delete it if not needed.
-
 ### Repository-Service Pattern vs Laravel Eloquent
 There is a debate about whether to implement the repository-service pattern in laravel or not...well, after reading a bunch of blogs, articles and my years' experiences, I can surely tell you Laravel is not designed for using PURE repository-service pattern like Java/Spring.
 
