@@ -6,7 +6,7 @@
 
 ## IMPORTANT UPDATE
 
-I am working on another new open source project which will re-organise and re-write [Laravel Module](https://github.com/nWidart/laravel-modules) with my own open-source projects, the version will contain more features covered, e.g. support Admin custom setting JSONs, vuejs simple admin, api generators etc.
+This is a lightweight module-based boilerplate generator.
 
 Please be mind, if you have any issues related to this package, please submit tickets I will only update if there is bugs.
 
