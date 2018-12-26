@@ -6,6 +6,10 @@
 
 ## IMPORTANT UPDATE
 
+This project is not finished yet, its still missing a lot features. However, you can still use it if you just want a simple structure. I will slowly update the project in the following days.
+
+-----
+
 This is a lightweight module-based boilerplate generator.
 
 Please be mind, if you have any issues related to this package, please submit tickets I will only update if there is bugs.
