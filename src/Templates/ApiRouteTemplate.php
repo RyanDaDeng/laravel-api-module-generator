@@ -40,7 +40,7 @@ class ApiRouteTemplate extends AbstractPatternTemplate implements RouteSimpleTem
         ];
         foreach ($this->uri as $uri) {
 
-            if ($uri['type'] === 'web') {
+            if ($uri['type'] === 'api') {
                 $row = [
                     'uri' => $uri['uri'],
                     'method' => $uri['method'],
