@@ -24,7 +24,7 @@ class ModelClassTemplate extends AbstractPatternTemplate implements ClassSimpleT
             'use' => [
                 'Illuminate\Database\Eloquent\Model'
             ],
-            'class_name' => ucwords($this->moduleName) . ucwords($this->uri),
+            'class_name' =>  ucwords($this->uri),
             'extends' => 'Model',
             'implements' => [],
             'traits' => [
